@@ -16,16 +16,14 @@ namespace KK_PregnancyPlus
 {       
     [BepInPlugin(GUID, GUID, Version)]
     [BepInDependency("com.deathweasel.bepinex.uncensorselector", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("com.joan6694.illusionplugins.poseeditor", BepInDependency.DependencyFlags.SoftDependency)]
     #if KKS
         [BepInDependency(KoikatuAPI.GUID, "1.26")]
-        [BepInDependency("KKPE", BepInDependency.DependencyFlags.SoftDependency)]
         [BepInDependency("KK_Pregnancy", BepInDependency.DependencyFlags.SoftDependency)]
     #elif HS2
         [BepInDependency(KoikatuAPI.GUID, "1.15")]
-        [BepInDependency("HS2PE", BepInDependency.DependencyFlags.SoftDependency)]
     #elif AI
         [BepInDependency(KoikatuAPI.GUID, "1.17")]
-        [BepInDependency("AIPE", BepInDependency.DependencyFlags.SoftDependency)]
         [BepInDependency("AI_Pregnancy", BepInDependency.DependencyFlags.SoftDependency)]
     #endif
     public partial class PregnancyPlusPlugin : BaseUnityPlugin
